@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    height: 70px;
+    background-color: #fef6e4;
+}
+
+.logo{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.LogoMan{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    justify-content: flex-start; 
+}
+
+.fa-solid{
+    font-size: 20px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.line{
+    margin-top: 0px;
+    height: 3px;
+    width: 100%;
+    background-color:rgb(175, 114, 0);
+}
+
+.nav-link:hover{
+    color: #e63946;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    height: 400px;
+    background-color: #fef6e4;
+    overflow: hidden;   /* 🔑 image bahar jaane se rokta hai */
+}
+
+.hero-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 20px;
+}
+
+.hero-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img img{
+    max-width: 100%;   /* 🔥 MOST IMPORTANT */
+    height: auto;
+    max-height: 450px; /* 🔥 size control */
+}
+
+.spanElement{
+    color: #e63946;
+}
+
+.hero-text h1{
+    font-size: 45px;   
+}
+
+.hero-text p {
+    font-size: 15px;
+}
+
+.btn1{
+    width: 140px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #ff0013;
+    color: #fff;              /* white text */
+    font-weight: 700;          /* fix weight */
+    font-size: 16px;
+    border: none;              /* remove default border */
+    cursor: pointer;           /* pointer on hover */
+    gap: 5px;                  /* space between text & icon */
+    transition: all 0.3s ease;
+}
+
+.btn1:hover{
+    background-color: #cc0010;; /* darker red on hover */
+    transform: translateY(-2px); /* subtle lift effect */
+}
+
+.hero2{
+    height: 500px;
+    width: 100%;
+    margin-top: 0px;
+    background-color: #fef6e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items{
+    background-color: rgb(255, 253, 253);
+    border-radius: 20px;
+    width: 900px;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.itemAll{
+    height: 350px;
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.itemAll:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.item1Img{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;  
+    overflow: hidden;
+    height: 180px;
+}
+
+.item1Img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* 🔥 image crop hoke perfect fit */
+}
+
+.itemAll h4 {
+    font-size: 18px;
+    text-align: center;
+} 
+.itemAll p{
+    text-align: center;
+    font-size: 13px;
+    padding: 0 10px;
+    color: #444;
+    font-weight: 600;
+}
+
+.itemAll button{
+    height: 30px;
+    width: 90px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff0013;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+    border: 1px #ff0013 solid;
+    transition: all 0.3s ease;
+}
+
+.itemAll button:hover{
+    background-color: #cc0010;; /* darker red on hover */
+    transform: translateY(-2px); /* subtle lift effect */  
+}
+
+.hero3{
+    background-color: #fef6e4;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.whyImg{
+    flex: 1;
+    height:420px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whyImg img{
+    object-fit: cover;
+    height: 400px;
+}
+
+.whyText{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
+    gap: 40px;
+}
+
+.whyText h3{
+    font-size: 30px;
+}
+
+.innerWhyText{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 17px;
+}
+
+.iwt h3{
+    font-size: 20px;
+}
+
+.iwt p {
+    font-size: 15px;
+}
+
+.iwt{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hero4{
+    background-color: #fef6e4;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.innerFb{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.fbText{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 40px;
+    font-size: 20px;
+    padding-left: 75px;
+}
+
+.fbText h2 {
+    font-size: 38px;
+}
+
+.fbText p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 30px;
+}
+
+.fbImg{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 480px;
+    overflow: hidden;
+}
+
+.fbImg img{
+    object-fit: cover;
+    height: 400px;
+}
+
+.stars{
+    color: #f4b400;
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+.foot{
+    background-color: #dd5321;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 400px;
+}
+
+.foottext{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footImg{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.footImg img{
+    object-fit: cover;
+    height: 400px;
+}
+
+.foottext h3 {
+    font-size: 40px;
+}
+
+.foottext p {
+    font-size: 17px;
+    font-weight: 700;
+    justify-content: flex-start;
+
+    
+}
+
+.newSpan{
+    /* color: rgb(38, 38, 38); */
+    color: rgb(213, 204, 204);
+}
+
+.social-icons{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icons i{
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.social-icons i:hover{
+    color: #000;
+    transform: translateY(-3px);
+}
+
+    
+
+

@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* outline: red 1px solid; */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    height: 70px;
+    background-color: #fef6e4;
+}
+
+.logo{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.LogoMan{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    justify-content: flex-start; 
+}
+
+.fa-solid{
+    font-size: 20px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.line{
+    margin-top: 0px;
+    height: 3px;
+    width: 100%;
+    background-color:rgb(175, 114, 0);
+}
+
+.nav-link:hover{
+    color: #e63946;
+}
+
+.hero{
+    height: 900px;
+    width: 100%;
+    background-color: #fef6e4;   
+    margin-top: 0px;
+}
+
+.row1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: white; */
+    height: 250px;   
+    /* margin-top: 50px; */
+}
+
+.ele1{
+    height: 220px;
+    width: 170px;
+    border-radius: 20px;
+    border: 3px solid #d29404;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fef6e4;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ele1Img{
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    height: 100px;
+    width: 150px;
+    overflow: hidden; 
+    text-align: center;
+}
+
+.ele1Img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* image crop hoke perfect fit */
+    border-radius: 20px;
+}
+
+.ele1text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ele1text h5 i {
+    font-size: 14px;
+}
+
+.ele1text h5 {
+    font-size: 15px;
+    color: #e63946;
+}
+
+.ele1:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.line2{
+    height: 1px;
+    background-color: #e63946;
+    width: 100%;
+}
+
+.space{
+    height: 300px;
+    background-color: #fef6e4;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line8{
+    height: 3px;
+    width: 300px;
+    background-color: #e6394776;
+    border-radius: 20px;
+}
+
+.bill {
+    height: auto;
+    /* width: 400px; optional: section width set kar do */
+    background-color: #fef6e4;
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px; */
+    border-radius: 10px;
+    padding-bottom: 50px;
+    /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
+    /* overflow-y: auto; scroll agar items zyada ho */
+}
+
+.bill h3{
+    font-size: 35px;
+    color: #e63946;
+    font-weight: 700;
+    margin-left: 110px;
+}
+
+.bill ul{
+    margin-left: 130px;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 20px;
+    /* border: 2px solid #e63946; */
+    list-style: none;
+}
+
+
+.bill ul li{
+    display: flex;
+    justify-content: space-between; /* name+price left, delete button right */
+    align-items: center;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    background-color: #fff3e0;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    font-size: 16px;
+    font-weight: 500;
+    width: 75%;
+}
+
+.bill ul li:hover {
+    background-color: #ffe0b2; /* thoda lighter orange */
+    transform: translateY(-2px); /* thoda upar uthta effect */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15); /* shadow thoda strong */
+    transition: all 0.2s ease; /* smooth effect */
+}
+
+.delete {
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    height: 25px;
+    width: 60px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.delete:hover {
+    background-color: #d62828;
+}
+
+/* .billGenerator{
+    width: 130px;
+    height: 30px;
+    margin-left: 40%;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: #e63946;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+    display: none;
+} */
+
+.billGenerator{
+    width: 180px;
+    height: 42px;
+    margin-top: 25px;
+    margin-left: 550px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #e63946, #d62828);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    transition: all 0.25s ease;
+    display: none;
+
+    /* 🔥 MAIN FIX */
+}
+
+
+.billGenerator:hover{
+    transform: translateY(-2px);
+    background-color: #d62828;
+}
+
+.help{
+    color: black;
+    font-weight: 450;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.lineHead{
+    height: 3px;
+    width: 450px;
+    background-color: #e63946;
+    border-radius: 20px;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
+.newSecionStyle{
+    height: 400px;
+    width: 100%;
+    background-color: #fef6e4;   
+    margin-top: 0px;
+}
+
+.finalBill{
+    display: none;
+    justify-content: center;
+    align-items: center; /* 🔹 ye top aligned */
+    gap: 300px;
+    margin-top: 30px;
+    width: 100%;
+}
+ .finalBill {
+    display: none; 
+} 
+
+.billmg{
+    display: flex;
+    justify-content: flex-end;
+    flex: initial;
+}
+.billmg img {
+    width: 260px;
+    height: auto;
+    filter: drop-shadow(0 8px 15px rgba(0,0,0,0.25));
+}
+
+.finalBill .insideBill p{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.4;
+}
+.insideBill {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    width: 100%;
+    max-width: 450px; 
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fef6e4;
+    border: 2px solid #d29404; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    gap: 12px;
+    height: auto;
+    margin-top: 0;
+    margin-left: 0px;
+    flex: initial;
+    transition: all 0.3s ease;
+}
+
+.finalBill .insideBill .p1{
+    font-size: 25px;
+    color: #d62828;
+    font-weight: 700;
+}
+
+.finalBill .insideBill .linee{
+    height: 3px;
+    background-color: #d62828;
+    width: 100%;
+
+}
+
+.insideBill:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+} 
+
+.billBold{
+    font-weight: 700;
+    color: #d62828;
+}
+
+.p1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #d62828;
+}
+
+.p1 i {
+    color: #d62828;
+    font-size: 28px;
+}
