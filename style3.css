@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,7 @@
     /* outline: red 1px solid; */
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,30 +15,30 @@ nav{
     background-color: #fef6e4;
 }
 
-.logo{
+.logo {
     font-weight: 700;
     font-size: 30px;
 }
 
-.LogoMan{
+.LogoMan {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     gap: 10px;
-    justify-content: flex-start; 
+    justify-content: flex-start;
 }
 
-.fa-solid{
+.fa-solid {
     font-size: 20px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     list-style: none;
     gap: 25px;
 }
 
-.nav-link{
+.nav-link {
     text-decoration: none;
     font-weight: 700;
     color: black;
@@ -46,34 +46,34 @@ nav ul{
     transition: all 0.3s ease;
 }
 
-.line{
+.line {
     margin-top: 0px;
     height: 3px;
     width: 100%;
-    background-color:rgb(175, 114, 0);
+    background-color: rgb(175, 114, 0);
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #e63946;
 }
 
-.hero{
+.hero {
     height: 900px;
     width: 100%;
-    background-color: #fef6e4;   
+    background-color: #fef6e4;
     margin-top: 0px;
 }
 
-.row1{
+.row1 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     /* background-color: white; */
-    height: 250px;   
+    height: 250px;
     /* margin-top: 50px; */
 }
 
-.ele1{
+.ele1 {
     height: 220px;
     width: 170px;
     border-radius: 20px;
@@ -86,23 +86,24 @@ nav ul{
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.ele1Img{
+.ele1Img {
     /* border: 2px solid black; */
     border-radius: 20px;
     height: 100px;
     width: 150px;
-    overflow: hidden; 
+    overflow: hidden;
     text-align: center;
 }
 
-.ele1Img img{
+.ele1Img img {
     width: 100%;
     height: 100%;
-    object-fit: cover;  /* image crop hoke perfect fit */
+    object-fit: cover;
+    /* image crop hoke perfect fit */
     border-radius: 20px;
 }
 
-.ele1text{
+.ele1text {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -120,18 +121,18 @@ nav ul{
     color: #e63946;
 }
 
-.ele1:hover{
+.ele1:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.line2{
+.line2 {
     height: 1px;
     background-color: #e63946;
     width: 100%;
 }
 
-.space{
+.space {
     height: 300px;
     background-color: #fef6e4;
     margin-top: 0px;
@@ -140,7 +141,7 @@ nav ul{
     justify-content: center;
 }
 
-.line8{
+.line8 {
     height: 3px;
     width: 300px;
     background-color: #e6394776;
@@ -160,14 +161,14 @@ nav ul{
     /* overflow-y: auto; scroll agar items zyada ho */
 }
 
-.bill h3{
+.bill h3 {
     font-size: 35px;
     color: #e63946;
     font-weight: 700;
     margin-left: 110px;
 }
 
-.bill ul{
+.bill ul {
     margin-left: 130px;
     color: black;
     font-weight: 500;
@@ -178,25 +179,30 @@ nav ul{
 }
 
 
-.bill ul li{
+.bill ul li {
     display: flex;
-    justify-content: space-between; /* name+price left, delete button right */
+    justify-content: space-between;
+    /* name+price left, delete button right */
     align-items: center;
     padding: 8px 10px;
     margin-bottom: 10px;
     background-color: #fff3e0;
     border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     font-size: 16px;
     font-weight: 500;
     width: 75%;
 }
 
 .bill ul li:hover {
-    background-color: #ffe0b2; /* thoda lighter orange */
-    transform: translateY(-2px); /* thoda upar uthta effect */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.15); /* shadow thoda strong */
-    transition: all 0.2s ease; /* smooth effect */
+    background-color: #ffe0b2;
+    /* thoda lighter orange */
+    transform: translateY(-2px);
+    /* thoda upar uthta effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    /* shadow thoda strong */
+    transition: all 0.2s ease;
+    /* smooth effect */
 }
 
 .delete {
@@ -229,7 +235,7 @@ nav ul{
     display: none;
 } */
 
-.billGenerator{
+.billGenerator {
     width: 180px;
     height: 42px;
     margin-top: 25px;
@@ -248,19 +254,19 @@ nav ul{
 }
 
 
-.billGenerator:hover{
+.billGenerator:hover {
     transform: translateY(-2px);
     background-color: #d62828;
 }
 
-.help{
+.help {
     color: black;
     font-weight: 450;
     font-size: 20px;
     font-family: sans-serif;
 }
 
-.lineHead{
+.lineHead {
     height: 3px;
     width: 450px;
     background-color: #e63946;
@@ -269,53 +275,57 @@ nav ul{
     margin-top: 20px;
 }
 
-.newSecionStyle{
+.newSecionStyle {
     height: 400px;
     width: 100%;
-    background-color: #fef6e4;   
+    background-color: #fef6e4;
     margin-top: 0px;
 }
 
-.finalBill{
+.finalBill {
     display: none;
     justify-content: center;
-    align-items: center; /* 🔹 ye top aligned */
+    align-items: center;
+    /* 🔹 ye top aligned */
     gap: 300px;
     margin-top: 30px;
     width: 100%;
 }
- .finalBill {
-    display: none; 
-} 
 
-.billmg{
+.finalBill {
+    display: none;
+}
+
+.billmg {
     display: flex;
     justify-content: flex-end;
     flex: initial;
 }
+
 .billmg img {
     width: 260px;
     height: auto;
-    filter: drop-shadow(0 8px 15px rgba(0,0,0,0.25));
+    filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.25));
 }
 
-.finalBill .insideBill p{
+.finalBill .insideBill p {
     margin: 0;
     font-size: 18px;
     font-weight: 500;
     color: #333;
     line-height: 1.4;
 }
+
 .insideBill {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    max-width: 450px; 
+    max-width: 450px;
     padding: 20px;
     border-radius: 20px;
     background-color: #fef6e4;
-    border: 2px solid #d29404; 
+    border: 2px solid #d29404;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     gap: 12px;
     height: auto;
@@ -325,13 +335,13 @@ nav ul{
     transition: all 0.3s ease;
 }
 
-.finalBill .insideBill .p1{
+.finalBill .insideBill .p1 {
     font-size: 25px;
     color: #d62828;
     font-weight: 700;
 }
 
-.finalBill .insideBill .linee{
+.finalBill .insideBill .linee {
     height: 3px;
     background-color: #d62828;
     width: 100%;
@@ -340,10 +350,10 @@ nav ul{
 
 .insideBill:hover {
     transform: scale(1.03);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
-} 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 
-.billBold{
+.billBold {
     font-weight: 700;
     color: #d62828;
 }
@@ -360,4 +370,53 @@ nav ul{
 .p1 i {
     color: #d62828;
     font-size: 28px;
+}
+
+.toast {
+    height: 60px;
+    width: 220px;
+    background-color: #ffe0b2;
+    color: #d62828;
+    border: 1px solid #d62828;
+    border-radius: 10px;
+    font-weight: 800;
+
+    position: fixed;
+    top: 7rem;
+    right: 3rem;
+    z-index: 1000;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.toast.show {
+    display: flex;
+    animation: slideIn 0.5s ease-out, fadeOut 0.5s 2.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
 }

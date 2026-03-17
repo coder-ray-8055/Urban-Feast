@@ -1,6 +1,8 @@
 const cards = document.querySelectorAll(".ele1");
 const ul = document.querySelector(".billList")
 const genBtn = document.querySelector(".billGenerator")
+const toast = document.querySelector('.toast');
+
 
 let cost = []
 
@@ -63,10 +65,13 @@ function genBill() {
 
     billSection.style.display = "flex";
 
-    const result = Total();   // 👈 yahin magic hai
+    const result = Total();   
     const gTotal = grandTotal()
 
-    // billSection.innerHTML = "";  // clear old bill
+    toast.classList.add('show');
+    setTimeout(() => {
+        toast.classList.remove('show');
+    }, 3000); 
 
     billSection.classList.add("newSecionStyle")
     let para1 = document.querySelector(".p1")
@@ -115,5 +120,7 @@ function grandTotal() {
 const logo = document.querySelector(".logo");
 
 logo.addEventListener("click", () => {
-    window.location.href = "index.html"; // yaha home page ka path daal do
+    window.location.href = "index.html"; 
 });
+
+
