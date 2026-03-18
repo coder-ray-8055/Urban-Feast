@@ -1,31 +1,40 @@
-# 🍽️ Urban Feast – Food Ordering Website
+# 🍽️ Urban Feast – Interactive Food Ordering Website
 
 <p align="center">
-  A simple and interactive food ordering website built using <b>HTML, CSS, and JavaScript</b>.  
-  Urban Feast simulates a modern restaurant website where users can explore food items, add them to cart, and book tables.
+  A modern and interactive food ordering website built using <b>HTML, CSS, and JavaScript</b>.  
+  Urban Feast simulates a real restaurant experience with menu browsing, cart system, table booking, and dynamic UI feedback.
 </p>
 
 ---
 
 ## 🚀 Features
 
-✨ **Modern UI Layout**  
-Clean and simple layout designed to mimic a restaurant website experience.
+✨ **Modern UI & Clean Design**  
+Simple, elegant layout inspired by real restaurant websites.
 
 🛒 **Add to Cart System**  
-Users can add food items to a cart using JavaScript-based functionality.
+Users can add food items to cart with dynamic JavaScript functionality.
 
-📅 **Table Booking Interface**  
-A simple frontend form where users can book a table.
+📅 **Table Booking System**  
+Interactive booking interface with dynamic confirmation messages.
 
-📄 **Multiple Pages**  
-Includes multiple sections like Home, About, Menu, and Booking.
+🔔 **Toast Notifications (NEW)**  
+Real-time feedback using reusable toast alerts for booking status (success / error).
+
+🎯 **Dynamic Booking Summary**  
+Displays personalized booking confirmation with user details.
+
+🔽 **Smooth Scroll Navigation**  
+Automatically scrolls to booking summary section after submission.
+
+📄 **Multi-Page Structure**  
+Includes Home, About, Menu, and Booking pages.
 
 🖼️ **Food Gallery / Menu Items**  
-Food items displayed with images and descriptions.
+Visually appealing food items with images and descriptions.
 
-⚡ **Basic JavaScript Interactivity**  
-Dynamic cart behavior and simple frontend logic.
+⚡ **JavaScript Interactivity**  
+DOM manipulation for dynamic UI updates and user interactions.
 
 ---
 
@@ -33,57 +42,62 @@ Dynamic cart behavior and simple frontend logic.
 
 | Technology | Purpose |
 |---|---|
-| HTML5 | Structure of the website |
-| CSS3 | Styling and layout |
-| JavaScript | Interactivity and cart functionality |
+| HTML5 | Structure |
+| CSS3 | Styling & Layout |
+| JavaScript | Logic & Interactivity |
 
 ---
 
 ## 📂 Project Structure
 
-```
-Urban-Feast
-│
+Urban-Feast/
 ├── index.html
-├── about.html
-├── booking.html
+├── index2.html
+├── index3.html
+├── index4.html
 ├── style.css
-├── script.js
-└── assets
-     └── images
-```
+├── style2.css
+├── style3.css
+├── style4.css
+├── app.js
+├── app2.js
+├── app3.js
+├── app4.js
+└── assets/
+    └── images/
+
 
 ---
 
-## 🎯 Purpose of This Project
+## 🎯 Key Learnings
 
-This project was built to practice:
-
-- Frontend web development
-- DOM manipulation using JavaScript
-- Creating multi-page websites
-- Implementing basic UI interactions
+- DOM Manipulation using JavaScript
+- Event Handling & User Interaction
+- Building reusable UI components (Toast System)
+- Managing dynamic UI states
+- Creating multi-page frontend projects
 
 ---
 
 ## ⚠️ Disclaimer
 
-All images used in this project are taken from online sources for **educational and demonstration purposes only**.
+All images used are for **educational/demo purposes only**.
 
 ---
 
-## 📌 Future Improvements
+## 🚀 Future Improvements
 
-- Make the website fully responsive
-- Add a real backend cart system
-- Implement online payment integration
-- Add user login and signup system
+- 📱 Make fully responsive (mobile-friendly)
+- 🧠 Add real backend (Node.js / MongoDB)
+- 💳 Online payment integration
+- 🔐 User authentication system
+- 🔔 Advanced notifications system
 
 ---
 
 ## ⭐ Support
 
-If you like this project, consider giving it a **star ⭐ on GitHub**.
+If you like this project, give it a **star ⭐ on GitHub**.
 
 ---
 
@@ -91,4 +105,4 @@ If you like this project, consider giving it a **star ⭐ on GitHub**.
 
 **Rayyan Akhtar**
 
-Aspiring Developer currently learning **JavaScript, Web Development, and Data Science** while building practical projects.
+Aspiring Developer focused on **JavaScript, Web Development, and Data Science**.

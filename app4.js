@@ -4,8 +4,8 @@ let date = document.querySelector(".date")
 let time = document.querySelector(".time")
 let btn = document.querySelector(".book")
 let img= document.querySelector(".sumImg")
+let booksection = document.querySelector(".bookSummary")
 
-// let summary = document.querySelector(".summary")////////
 let summaryText = document.querySelector(".summaryText")
 
 btn.addEventListener("click" , afterClick)
@@ -31,17 +31,39 @@ function afterClick(){
      if(luck >= 4){
         summaryText.append(p1)
         img.setAttribute("src" , "./assests/images/main6.png")
+         showToast('<i class="fa-solid fa-circle-check"></i> Booked Successfully ', "success")
      } else{
         summaryText.append(p2)
         img.setAttribute("src" , "./assests/images/main7.png")
+         showToast('<i class="fa-solid fa-circle-xmark"></i> Seat Full', "error")
      }
 
     name.value = ""
     Email.value = ""
     date.value = ""
     time.value = ""
+
+    booksection.scrollIntoView({
+        behavior: "smooth"
+    })
 }
 
+const toast = document.querySelector(".toast")
+const toastMsg = document.querySelector(".toast-message")
+
+function showToast(message , type){
+
+    toast.classList.remove("success" , "error" , "show")
+
+    toast.classList.add("show")
+    toast.classList.add(type)
+    toastMsg.innerHTML = message
+
+    setTimeout(()=>{
+        toast.classList.remove("show")
+        toast.classList.remove(type)
+    },3000)
+}
 
 const logo = document.querySelector(".logo");
 
