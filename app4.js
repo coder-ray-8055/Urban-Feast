@@ -3,66 +3,86 @@ let Email = document.querySelector(".Email")
 let date = document.querySelector(".date")
 let time = document.querySelector(".time")
 let btn = document.querySelector(".book")
-let img= document.querySelector(".sumImg")
+let img = document.querySelector(".sumImg")
 let booksection = document.querySelector(".bookSummary")
+let btnText = document.querySelector(".btn-text")
+let loader = document.querySelector(".loader")
 
 let summaryText = document.querySelector(".summaryText")
 
-btn.addEventListener("click" , afterClick)
+btn.addEventListener("click", afterClick)
 
-function afterClick(){
-    img.style.display = "block";
-    summaryText.innerHTML = "";
+function afterClick() {
 
-    let p1 = document.createElement("p")
-    p1.innerHTML = `Hi <span class="jspart">${name.value}</span> thanks for booking table at Urban Feast , <br>
-     Your table is <span class="jspart">successfully</span> booked on <span class="jspart">${date.value}</span> at <span class="jspart">${time.value}</span> <br> 
-     We will update you on given Email <span class="jspart">${Email.value}</span> <br>
-     We look forward to serving you at Urban Feast 🍽️` 
+    if (name.value.trim() === "" || Email.value.trim() === "" || date.value === "" || time.value === "") {
+        showToast('<i class="fa-solid fa-triangle-exclamation"></i> Please fill all fields', "error")
+        return
+    }
 
-     let p2 = document.createElement("p")
-     p2.innerHTML = `Sorry ${name.value},<span class="jspart"> All tables are booked</span> <br>
-     We are currently <span class="jspart">fully booked</span> for the selected date and time. <br>
-     Please try another time slot or visit us on a different day. <br>
-     Thank you for your <span class="jspart">understanding</span>  ❤️`
+    btnText.style.display = "none"
+    loader.style.display = "inline-block"
+    btn.disabled = true
 
-     let luck = Math.floor(Math.random()*10) + 1
+    setTimeout(() => {
 
-     if(luck >= 4){
-        summaryText.append(p1)
-        img.setAttribute("src" , "./assests/images/main6.png")
-         showToast('<i class="fa-solid fa-circle-check"></i> Booked Successfully ', "success")
-     } else{
-        summaryText.append(p2)
-        img.setAttribute("src" , "./assests/images/main7.png")
-         showToast('<i class="fa-solid fa-circle-xmark"></i> Seat Full', "error")
-     }
+        img.style.display = "block";
+        summaryText.innerHTML = "";
 
-    name.value = ""
-    Email.value = ""
-    date.value = ""
-    time.value = ""
+        let p1 = document.createElement("p")
+        p1.innerHTML = `Hi <span class="jspart">${name.value}</span> thanks for booking table at Urban Feast , <br>
+        Your table is <span class="jspart">successfully</span> booked on <span class="jspart">${date.value}</span> at <span class="jspart">${time.value}</span> <br> 
+        We will update you on given Email <span class="jspart">${Email.value}</span> <br>
+        We look forward to serving you at Urban Feast 🍽️`
 
-    booksection.scrollIntoView({
-        behavior: "smooth"
-    })
+        let p2 = document.createElement("p")
+        p2.innerHTML = `Sorry ${name.value},<span class="jspart"> All tables are booked</span> <br>
+        We are currently <span class="jspart">fully booked</span> for the selected date and time. <br>
+        Please try another time slot or visit us on a different day. <br>
+        Thank you for your <span class="jspart">understanding</span> ❤️`
+
+        let luck = Math.floor(Math.random() * 10) + 1
+
+        if (luck >= 4) {
+            summaryText.append(p1)
+            img.setAttribute("src", "./assests/images/main6.png")
+            showToast('<i class="fa-solid fa-circle-check"></i> Booked Successfully ', "success")
+        } else {
+            summaryText.append(p2)
+            img.setAttribute("src", "./assests/images/main7.png")
+            showToast('<i class="fa-solid fa-circle-xmark"></i> Seat Full', "error")
+        }
+
+        name.value = ""
+        Email.value = ""
+        date.value = ""
+        time.value = ""
+
+        booksection.scrollIntoView({
+            behavior: "smooth"
+        })
+
+        btnText.style.display = "inline"
+        loader.style.display = "none"
+        btn.disabled = false
+
+    }, 1500) 
 }
 
 const toast = document.querySelector(".toast")
 const toastMsg = document.querySelector(".toast-message")
 
-function showToast(message , type){
+function showToast(message, type) {
 
-    toast.classList.remove("success" , "error" , "show")
+    toast.classList.remove("success", "error", "show")
 
     toast.classList.add("show")
     toast.classList.add(type)
     toastMsg.innerHTML = message
 
-    setTimeout(()=>{
+    setTimeout(() => {
         toast.classList.remove("show")
         toast.classList.remove(type)
-    },3000)
+    }, 3000)
 }
 
 const logo = document.querySelector(".logo");

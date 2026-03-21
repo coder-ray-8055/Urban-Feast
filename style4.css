@@ -201,6 +201,22 @@ nav ul {
     gap: 10px;
 }
 
+.loader {
+    width: 18px;
+    height: 18px;
+    border: 3px solid white;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    display: inline-block;
+    animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .toast span i{
     font-size: 18px;
 }

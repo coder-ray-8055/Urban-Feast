@@ -1,97 +1,83 @@
-# 🍽️ Urban Feast – Interactive Food Ordering Website
+# 🍽️ Urban Feast – Interactive Restaurant Web App
 
 <p align="center">
-  A modern and interactive food ordering website built using <b>HTML, CSS, and JavaScript</b>.  
-  Urban Feast simulates a real restaurant experience with menu browsing, cart system, table booking, and dynamic UI feedback.
+  <b>Urban Feast</b> is a modern, interactive restaurant web application built using
+  <b>HTML, CSS, and JavaScript</b>.  
+  It simulates a real-world dining experience with features like menu browsing, cart system,
+  table booking, and dynamic UI feedback.
 </p>
 
 ---
 
-## 🚀 Features
+## 🚀 Live Features
 
-✨ **Modern UI & Clean Design**  
-Simple, elegant layout inspired by real restaurant websites.
+✨ **Modern & Clean UI**  
+A visually appealing design inspired by real restaurant websites.
 
-🛒 **Add to Cart System**  
-Users can add food items to cart with dynamic JavaScript functionality.
+🛒 **Dynamic Add to Cart System**  
+Users can add food items with real-time UI updates.
 
-📅 **Table Booking System**  
-Interactive booking interface with dynamic confirmation messages.
+📅 **Smart Table Booking System**  
+Interactive booking with validation and dynamic confirmation.
 
-🔔 **Toast Notifications (NEW)**  
-Real-time feedback using reusable toast alerts for booking status (success / error).
+⏳ **Loading Animation (NEW)**  
+Simulates real API delay using spinner for better UX.
+
+🔔 **Reusable Toast Notification System**  
+Real-time alerts for success/error states.
 
 🎯 **Dynamic Booking Summary**  
-Displays personalized booking confirmation with user details.
+Personalized confirmation messages based on user input.
 
 🔽 **Smooth Scroll Navigation**  
-Automatically scrolls to booking summary section after submission.
+Auto-scroll to booking summary after submission.
 
-📄 **Multi-Page Structure**  
+📄 **Multi-Page Architecture**  
 Includes Home, About, Menu, and Booking pages.
 
-🖼️ **Food Gallery / Menu Items**  
-Visually appealing food items with images and descriptions.
+🖼️ **Interactive Menu UI**  
+Food cards with images and descriptions.
 
 ⚡ **JavaScript Interactivity**  
-DOM manipulation for dynamic UI updates and user interactions.
+DOM manipulation, event handling, and UI updates.
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Technology | Purpose |
-|---|---|
-| HTML5 | Structure |
-| CSS3 | Styling & Layout |
+| Technology | Role |
+|------------|------|
+| HTML5      | Structure |
+| CSS3       | Styling & Layout |
 | JavaScript | Logic & Interactivity |
 
 ---
 
-## 📂 Project Structure
+## 🧠 Key Learnings
 
-Urban-Feast/
-├── index.html
-├── index2.html
-├── index3.html
-├── index4.html
-├── style.css
-├── style2.css
-├── style3.css
-├── style4.css
-├── app.js
-├── app2.js
-├── app3.js
-├── app4.js
-└── assets/
-    └── images/
-
-
----
-
-## 🎯 Key Learnings
-
-- DOM Manipulation using JavaScript
-- Event Handling & User Interaction
-- Building reusable UI components (Toast System)
-- Managing dynamic UI states
-- Creating multi-page frontend projects
+- DOM Manipulation  
+- Event Handling  
+- Form Validation  
+- UI/UX Design Basics  
+- Asynchronous Behavior (`setTimeout`)  
+- Reusable Components (Toast System)  
 
 ---
 
 ## ⚠️ Disclaimer
 
-All images used are for **educational/demo purposes only**.
+All images are used for **educational/demo purposes only**.
 
 ---
 
 ## 🚀 Future Improvements
 
-- 📱 Make fully responsive (mobile-friendly)
-- 🧠 Add real backend (Node.js / MongoDB)
-- 💳 Online payment integration
-- 🔐 User authentication system
-- 🔔 Advanced notifications system
+- 📱 Fully Responsive Design  
+- 💾 Local Storage Integration  
+- 🌐 Backend (Node.js + MongoDB)  
+- 🔐 Authentication System  
+- 💳 Payment Integration  
+- 🌙 Dark Mode  
 
 ---
 
@@ -103,6 +89,5 @@ If you like this project, give it a **star ⭐ on GitHub**.
 
 ## 👨‍💻 Author
 
-**Rayyan Akhtar**
-
-Aspiring Developer focused on **JavaScript, Web Development, and Data Science**.
+**Rayyan Akhtar (Ray)**  
+🚀 Aspiring Developer | JavaScript | Web Dev | Data Science  
