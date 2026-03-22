@@ -65,7 +65,7 @@ function afterClick() {
         loader.style.display = "none"
         btn.disabled = false
 
-    }, 1500) 
+    }, 1500)
 }
 
 const toast = document.querySelector(".toast")

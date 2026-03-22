@@ -77,11 +77,18 @@ nav ul {
     padding-left: 40px;
     padding-right: 80px;
     border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(230, 57, 70, 0.1);
+    transition: transform 0.3s ease;
     /* gap: 5px; */
 }
 
 .form label {
-    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* color: #555; */
+    margin-bottom: -5px;
 }
 
 
@@ -101,6 +108,19 @@ nav ul {
     height: 40px;
     padding-left: 10px;
     border: 1px solid #ccc;
+    background-color: #fafafa;
+    border: 1.5px solid #eee;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.form input:focus {
+    outline: none;
+    border-color: #e63946;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(230, 57, 70, 0.2);
+    transform: translateY(-2px);
+    /* Slight lift */
 }
 
 .form input:hover {
@@ -111,7 +131,8 @@ nav ul {
     background-color: #e63946;
     color: white;
     height: 40px;
-    border-radius: 5px;
+    border: none;
+    border-radius: 10px;
     font-size: 15px;
 }
 
@@ -151,6 +172,7 @@ nav ul {
 }
 
 .summaryText {
+    min-height: 150px;
     flex: 1;
     padding-left: 120px;
     line-height: 35px;
@@ -217,11 +239,11 @@ nav ul {
     }
 }
 
-.toast span i{
+.toast span i {
     font-size: 18px;
 }
 
-.toast.show{
+.toast.show {
     opacity: 1;
     transform: translateY(0px);
 }
