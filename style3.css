@@ -6,6 +6,10 @@
     /* outline: red 1px solid; */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -44,6 +48,27 @@ nav ul {
     color: black;
     font-size: 20px;
     transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #e63946;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    color: #e63946;
+    border-bottom: 2px solid #e63946;
 }
 
 .line {
