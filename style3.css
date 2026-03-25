@@ -32,6 +32,11 @@ nav {
     justify-content: flex-start;
 }
 
+.LogoMan i {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
 .fa-solid {
     font-size: 20px;
 }
@@ -69,6 +74,10 @@ nav ul {
 .nav-link.active {
     color: #e63946;
     border-bottom: 2px solid #e63946;
+}
+
+.nav-link.active::after {
+    width: 0;
 }
 
 .line {
@@ -398,16 +407,15 @@ nav ul {
 }
 
 .toast {
-    height: 60px;
-    width: 220px;
-    background-color: #ffe0b2;
-    color: #d62828;
-    border: 1px solid #d62828;
+    padding: 15px;
+    background-color: #2ecc71;
+    color: white;
+    border: 1px solid #2ecc71;
     border-radius: 10px;
     font-weight: 800;
 
     position: fixed;
-    top: 7rem;
+    top: 3rem;
     right: 3rem;
     z-index: 1000;
 

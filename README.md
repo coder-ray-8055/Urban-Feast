@@ -1,21 +1,21 @@
 # 🍽️ Urban Feast – Modern Interactive Restaurant Web App
 
 <p align="center">
-  <b>Urban Feast</b> is a sleek, modern, and fully interactive restaurant web application built using  
+  <b>Urban Feast</b> is a sleek, modern, and fully interactive restaurant web application built with  
   <b>HTML, CSS, and JavaScript</b>.  
   <br><br>
-  It delivers a real-world restaurant experience with smooth animations, dynamic UI interactions,  
-  and user-friendly features designed for an engaging experience.
+  Experience a real-world restaurant interface with smooth animations, dynamic UI interactions,  
+  and user-friendly features designed to engage users seamlessly.
 </p>
 
 ---
 
 ## 🌟 Highlights
 
-✨ Clean, modern & professional UI  
-⚡ Smooth scroll-based animations (Left / Right / Bottom reveal)  
-🎯 Interactive & responsive user experience  
-🧠 Smart DOM-based logic implementation  
+- ✨ Clean, modern & professional UI  
+- ⚡ Smooth scroll-based animations (Left / Right / Bottom reveal)  
+- 🎯 Interactive & responsive experience  
+- 🧠 Smart DOM-based logic implementation  
 
 ---
 
@@ -23,44 +23,33 @@
 
 ### 🎨 UI & Experience
 
-- Modern **restaurant-style landing page**
-- Smooth **scroll-triggered animations**
-- Direction-based motion (Left / Right / Bottom)
-- Hover effects & micro-interactions
-- Clean typography & spacing
-
----
+- Modern **restaurant-style landing page**  
+- Scroll-triggered **directional animations**  
+- Hover effects & micro-interactions  
+- Clean typography & layout spacing  
 
 ### 🛒 Interactivity
 
-- Dynamic **Add to Cart system**
-- Real-time UI updates
-- Interactive **Menu cards with hover effects**
-
----
+- Dynamic **Add to Cart system**  
+- Real-time **UI updates**  
+- Interactive **Menu cards with hover effects**  
 
 ### 📅 Booking System
 
-- Smart **Table Booking Form**
-- Input validation
-- Dynamic booking confirmation
-- Auto-scroll to summary section
-
----
+- Smart **Table Booking Form**  
+- Input validation & dynamic booking confirmation  
+- Auto-scroll to summary section  
 
 ### 🔔 Feedback System
 
-- Reusable **Toast Notification System**
-- Success / Error alerts
-- Better UX with instant feedback
-
----
+- Reusable **Toast Notification System**  
+- Success / Error alerts for better UX  
 
 ### ⏳ UX Enhancements
 
-- Loading spinner (API simulation using `setTimeout`)
-- Smooth navigation between sections
-- Multi-page structure (Home, About, Menu, Booking)
+- Loading spinner (simulated with `setTimeout`)  
+- Smooth navigation between sections  
+- Multi-page structure (Home, About, Menu, Booking)  
 
 ---
 
@@ -77,17 +66,17 @@
 ## 🧠 What I Learned
 
 - DOM Manipulation & Event Handling  
-- Scroll-based animations (real-world UI concept)  
+- Scroll-based animations for real-world UI  
 - Form Validation & User Input Handling  
 - Creating reusable UI components (Toast System)  
-- Managing UI states dynamically  
+- Managing dynamic UI states  
 - Writing cleaner & structured frontend code  
 
 ---
 
 ## ⚠️ Disclaimer
 
-All images used in this project are for **educational/demo purposes only**.
+All images used are for **educational/demo purposes only**.
 
 ---
 
@@ -104,8 +93,8 @@ All images used in this project are for **educational/demo purposes only**.
 
 ## ⭐ Show Your Support
 
-If you liked this project, consider giving it a **star ⭐ on GitHub**  
-It motivates me to build more awesome projects 🚀
+If you liked this project, consider giving it a **star ⭐ on GitHub**.  
+It motivates me to build more awesome projects 🚀.
 
 ---
 
@@ -113,5 +102,3 @@ It motivates me to build more awesome projects 🚀
 
 **Rayyan Akhtar (Ray)**  
 🚀 Aspiring Developer | JavaScript | Web Development | Data Science  
-
----

@@ -20,7 +20,7 @@ nav {
 }
 
 .logo {
-    font-weight: 700;
+    font-weight: 900;
     font-size: 30px;
 }
 
@@ -30,6 +30,11 @@ nav {
     justify-content: space-evenly;
     gap: 10px;
     justify-content: flex-start;
+}
+
+.LogoMan i {
+    font-size: 1.5rem;
+    font-weight: 900;
 }
 
 .fa-solid {
@@ -69,6 +74,10 @@ nav ul {
 .nav-link.active {
     color: #e63946;
     border-bottom: 2px solid #e63946;
+}
+
+.nav-link.active::after {
+    width: 0;
 }
 
 .line {
