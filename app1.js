@@ -15,3 +15,19 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded" , ()=>{
+    const mainBtn = document.querySelector(".btn1")
+    mainBtn.addEventListener("click" , ()=>{
+        window.location.href = "index4.html"
+    })
+})
+
+document.addEventListener("DOMContentLoaded" , ()=>{
+    const MenuBtn = document.querySelectorAll(".listBtn")
+    MenuBtn.forEach(btn =>{
+        btn.addEventListener("click" , ()=>{
+            window.location.href = "index3.html"
+        })
+    })
+})
