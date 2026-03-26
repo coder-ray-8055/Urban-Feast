@@ -17,6 +17,7 @@ nav {
     padding: 15px 40px;
     height: 70px;
     background-color: #fef6e4;
+    /* background: none; */
 }
 
 .logo {
@@ -95,6 +96,7 @@ nav ul {
     height: 900px;
     width: 100%;
     background-color: #fef6e4;
+    /* background: none; */
     margin-top: 0px;
 }
 
@@ -184,13 +186,13 @@ nav ul {
 
 .bill {
     height: auto;
-    /* width: 400px; optional: section width set kar do */
     background-color: #fef6e4;
+    /* background: none; */
     display: flex;
     flex-direction: column;
-    /* padding: 20px; */
     border-radius: 10px;
     padding-bottom: 50px;
+    padding-top: 20px;
     /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
     /* overflow-y: auto; scroll agar items zyada ho */
 }
@@ -453,3 +455,11 @@ nav ul {
         visibility: hidden;
     }
 }
+/* 
+.hero,
+.bill {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin: 20px;
+} */

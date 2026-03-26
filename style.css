@@ -9,13 +9,18 @@ html {
     scroll-behavior: smooth;
 }
 
+body{
+    background: linear-gradient(135deg, #fef6e4, #ffd6a5);
+}
+
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
     height: 70px;
-    background-color: #fef6e4;
+    /* background-color: #fef6e4; */
+    background: none;
 }
 
 .logo{
@@ -96,8 +101,9 @@ nav ul{
     justify-content: space-between;
     padding: 40px;
     height: 400px;
-    background-color: #fef6e4;
-    overflow: hidden;   /* 🔑 image bahar jaane se rokta hai */
+    /* background-color: #fef6e4; */
+    background: none;
+    overflow: hidden;   
 }
 
 .hero-text{
@@ -165,7 +171,8 @@ nav ul{
     height: 500px;
     width: 100%;
     margin-top: 0px;
-    background-color: #fef6e4;
+    /* background-color: #fef6e4; */
+    background: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,7 +252,8 @@ nav ul{
 }
 
 .hero3{
-    background-color: #fef6e4;
+    /* background-color: #fef6e4; */
+    background: none;
     height: 500px;
     width: 100%;
     display: flex;
@@ -302,7 +310,8 @@ nav ul{
 }
 
 .hero4{
-    background-color: #fef6e4;
+    /* background-color: #fef6e4; */
+    background: none;
     height: 500px;
     width: 100%;
     display: flex;
@@ -357,6 +366,14 @@ nav ul{
     font-size: 18px;
     margin-top: 0px;
 }
+/* 
+.hero,
+.hero2, .hero3 ,.hero4 {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin: 20px;
+} */
 
 .foot{
     background-color: #dd5321;

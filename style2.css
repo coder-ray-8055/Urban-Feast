@@ -9,13 +9,20 @@ html {
     scroll-behavior: smooth;
 }
 
+body{
+    /* background: linear-gradient(135deg, #fef6e4, #fde2c4) */
+    /* background: linear-gradient(135deg, #fff8e7, #ffe4c4); */
+    background: linear-gradient(135deg, #fef6e4, #ffd6a5);
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
     height: 70px;
-    background-color: #fef6e4;
+    /* background-color: #fef6e4; */
+    background: none;
 }
 
 .logo {
@@ -100,7 +107,9 @@ nav ul {
 
 .hero {
     min-height: 450px;
-    background-color: #fef6e4;
+    /* background-color: #fef6e4; */
+    background: none;
+    padding-bottom: 20px;
 }
 
 .innerHero {
@@ -179,8 +188,9 @@ nav ul {
 }
 
 .main2 {
-    height: 900px;
-    background-color: #fef6e4;
+    min-height: 900px;
+    /* background-color: #fef6e4; */
+    background: none;
     padding-bottom: 100px;
 }
 
@@ -207,6 +217,15 @@ nav ul {
     font-weight: 500;
     line-height: 1.5;
 }
+
+.hero,
+.main2 , .nav {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin: 20px;
+}
+
 .looks {
     width: 200px;
     height: 4px;

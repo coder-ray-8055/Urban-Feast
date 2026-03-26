@@ -10,13 +10,18 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background: linear-gradient(135deg, #fef6e4, #ffd6a5);
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
     height: 70px;
-    background-color: #fef6e4;
+    /* background-color: #fef6e4; */
+    background: none;
 }
 
 .logo {
@@ -92,7 +97,8 @@ nav ul {
 }
 
 .hero {
-    background-color: #fef6e4;
+    /* background-color: #fef6e4; */
+    background: none;
     height: 550px;
     display: flex;
     align-items: center;
@@ -191,7 +197,8 @@ nav ul {
 .bookSummary {
     height: 400px;
     width: 100%;
-    background-color: #fef6e4;
+    /* background-color: #fef6e4; */
+    background: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -266,6 +273,14 @@ nav ul {
     display: inline-block;
     animation: spin 0.7s linear infinite;
 }
+
+/* .hero,
+.bookSummary {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin: 20px;
+} */
 
 @keyframes spin {
     to {
